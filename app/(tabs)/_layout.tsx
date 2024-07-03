@@ -14,21 +14,42 @@ export default function TabLayout() {
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
       }}>
+
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'index',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
           ),
         }}
       />
+
       <Tabs.Screen
-        name="explore"
+        name="Connect"
         options={{
-          title: 'Explore',
+          title: 'Connect',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="ScentSequence"
+        options={{
+          title: 'ScentSequence',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'time' : 'time-outline'} color={color} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="App"
+        options={{
+          title: 'App',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'laptop' : 'laptop-outline'} color={color} />
           ),
         }}
       />
